@@ -1,0 +1,14 @@
+# 📊 CodeAlpha – Unemployment Analysis with Python
+
+This project is completed as part of the CodeAlpha Data Science Internship.
+
+## 📌 Project Overview
+This project analyzes unemployment rate data representing the percentage of unemployed people over time. Using Python, the project performs data cleaning, exploratory data analysis, and visualization to study unemployment trends, with special focus on the impact of COVID-19. Key patterns and seasonal variations are identified to provide insights that can help inform economic and social policy decisions.
+
+---
+
+## 📂 Dataset
+Dataset Source (as provided in the PDF):
+https://www.kaggle.com/datasets/gokulrajkmv/unemployment-in-india
+
+File to place:
