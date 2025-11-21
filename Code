@@ -1,0 +1,33 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load dataset
+df = pd.read_csv("dataset/unemployment.csv")
+
+# Basic cleaning
+df.columns = df.columns.str.strip()
+df.dropna(inplace=True)
+
+# Convert Date column
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Line plot: Unemployment trend
+plt.figure(figsize=(10,5))
+sns.lineplot(x='Date', y='Estimated Unemployment Rate (%)', data=df)
+plt.title("Unemployment Rate Trend Over Time")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("images/trend.png")
+plt.show()
+
+# COVID Impact (2020 data)
+covid_data = df[df['Date'].dt.year == 2020]
+
+plt.figure(figsize=(10,5))
+sns.lineplot(x='Date', y='Estimated Unemployment Rate (%)', data=covid_data, color='red')
+plt.title("Unemployment Rate During COVID-19 (2020)")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("images/covid_impact.png")
+plt.show()
