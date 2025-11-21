@@ -1,0 +1,36 @@
+
+---
+
+## 🎯 Objectives
+- Analyze unemployment rate data  
+- Perform data cleaning and exploration  
+- Visualize unemployment trends  
+- Investigate COVID-19 impact  
+- Identify seasonal patterns  
+- Provide data-driven insights
+
+---
+
+## 🧰 Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+## 🔍 Workflow
+1. Data Cleaning & Preprocessing  
+2. Exploratory Data Analysis (EDA)  
+3. Trend Visualization  
+4. COVID-19 Impact Analysis  
+5. Pattern Identification  
+6. Insight Generation
+
+---
+
+## ▶ How to Run
+
+### Install dependencies:
